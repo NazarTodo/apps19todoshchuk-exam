@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de5e2100-8c28-40df-ad34-2e3a58f03769" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/json/JsonObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/json/JsonObject.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +18,7 @@
   <component name="ProjectId" id="1UYtfMISzSLAOZXtJl9xgr4YJwJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -122,8 +125,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575545458743</updated>
-      <workItem from="1575545459885" duration="3380000" />
+      <workItem from="1575545459885" duration="4394000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot;commit&quot;">
+      <created>1575549473092</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575549473092</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,5 +150,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;commit&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;commit&quot;" />
   </component>
 </project>

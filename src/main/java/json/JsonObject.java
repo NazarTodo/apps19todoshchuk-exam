@@ -1,11 +1,14 @@
 package json;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Andrii_Rodionov on 1/3/2017.
  */
 public class JsonObject extends Json {
     private JsonPair[] jsonPairs;
-
+    private List<Tuple> lst;
     public JsonObject(JsonPair... jsonPairs) {
         this.jsonPairs = jsonPairs;
     }
@@ -32,36 +35,35 @@ public class JsonObject extends Json {
     }
 
     public void add(JsonPair jsonPair) {
-        // ToDo
+        List<Tuple> lst= new ArrayList<>();
+        lst.add(jsonPair);
     }
 
     public Json find(String name) {
-        // ToDo
-        return null;
+        Json value = null;
+        for (int i = 0; i < jsonPairs.length; i++) {
+            if (name.equals(jsonPairs[i].key)) {
+                value = jsonPairs[i].value;
+            }
+        }
+        return value;
     }
 
     public JsonObject projection(String... names) {
-        String str = "";
-        str += "{";
-        for (int j = 0; j < names.length; j++) {
-            for (int i = 0; i < jsonPairs.length; i++) {
-                if (j != names.length -1){
-                if (names[j].equals(jsonPairs[i].key)) {
-                    str += names[j];
-                    str += ": ";
-                    str += jsonPairs[i].value.toJson() + ", ";
-                }else {
-                    str += jsonPairs[i].key;
-                    str += ": ";
-                    str += jsonPairs[i].value.toJson();
-                }
-                }
+        JsonObject jsonObject = new JsonObject();
+
+
+        for (String el : names) {
+            if (find(el) != null){
+                JsonObject.add(new Tuple<>(el, find(el)));
             }
 
-            str += "}";
-            return ;
         }
+
+        System.out.println(lst);
+        return new JsonObject();
+
+
     }
-}
 
 }
